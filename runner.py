@@ -45,7 +45,10 @@ class ExperimentRunner:
         env_name = self.variant['environment_params']['training']['domain']
         if not os.path.exists('log/%s' % env_name):
             os.makedirs('log/%s' % env_name)
-        source_file = 'config/%s.py' % env_name.lower()
+        if len(self.variant['algorithm_params']['type']) == 4:
+            source_file = 'config/%s.py' % env_name.lower()
+        else:
+            source_file = 'config/%s_mmd.py' % env_name.lower()
         target_file = 'log/%s/%d.config' % (env_name, tag)
         copyfile(source_file, target_file)
         with open(target_file, 'a') as f_config:

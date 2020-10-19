@@ -17,9 +17,18 @@ def create_AMPO_algorithm(variant, *args, **kwargs):
     return algorithm
 
 
+def create_AMPO_MMD_algorithm(variant, *args, **kwargs):
+    import ampo_mmd
+
+    algorithm = ampo_mmd.AMPO_MMD(*args, **kwargs)
+
+    return algorithm
+
+
 ALGORITHM_CLASSES = {
     'SAC': create_SAC_algorithm,
     'AMPO': create_AMPO_algorithm,
+    'AMPO_MMD': create_AMPO_MMD_algorithm,
 }
 
 
