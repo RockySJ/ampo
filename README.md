@@ -1,10 +1,21 @@
-# AMPO
+# Model-based Policy Optimization with Unsupervised Model Adaptation
 
-Code to reproduce the experiments in the paper Model-based Policy Optimization with Unsupervised Model Adaptation
+This repository contains a TensorFlow implementation of AMPO.
+
 
 ## Requirements
 
 1. Install [MuJoCo 1.50](https://www.roboti.us/index.html) at `~/.mujoco/mjpro150` and copy your license key to `~/.mujoco/mjkey.txt`
 2. `pip install -r requirements.txt`
 
-## Usage
+## Running
+Configuration files can be found in [`config/`](config).
+```
+python main.py --config=config.ant
+```
+
+## Contact
+Please email to rockyshen@apex.sjtu.edu.cn should you have any questions, comments or suggestions.
+
+## Acknowledgments
+The code implementation is mainly modified based on the [MBPO](https://github.com/JannerM/mbpo) codebase.
