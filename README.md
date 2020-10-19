@@ -13,6 +13,11 @@ Configuration files can be found in [`config/`](config).
 ```
 python main.py --config=config.ant
 ```
+For MMD variant, 
+```
+python main.py --config=config.ant_mmd
+```
+
 
 ## Contact
 Please email to rockyshen@apex.sjtu.edu.cn should you have any questions, comments or suggestions.
