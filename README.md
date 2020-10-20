@@ -1,6 +1,6 @@
 # Model-based Policy Optimization with Unsupervised Model Adaptation
 
-This repository contains a TensorFlow implementation of AMPO.
+This repository contains a TensorFlow implementation of [AMPO](https://arxiv.org/abs/2010.09546).
 
 
 ## Requirements
