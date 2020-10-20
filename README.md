@@ -9,7 +9,7 @@ This repository contains a TensorFlow implementation of AMPO.
 2. `pip install -r requirements.txt`
 
 ## Running
-Configuration files can be found in [`config/`](config).
+Configuration files can be found in [`config/`](config). 
 
 For AMPO with Wasserstein distance
 ```
